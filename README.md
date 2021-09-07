@@ -55,4 +55,18 @@ After that, type `git commit -m 'added README'` to commit your changes to the re
 
 Now that we have a repo that we want to share, we can make a space for it on GitHub and then **push** our existing code onto GitHub. Click the '+' at the top right of GitHub and then click "New repository". 
 
-On the next page, you will need to name the repo on GitHub (the **remote** repo). We will name it similarly to how the local repo is named: `github_testing`
+On the next page, you will need to name the repo on GitHub (the **remote** repo). We will name it similarly to how the local repo is named: `github_testing`. Make the repo public, and uncheck all of the boxes at the bottom. Finally, click "create repo".
+
+Now we have a local repo and a remote repo. The last step is to link them together. On your local machine, type `git remote add origin https://github.com/YOUR_USERNAME/github_testing.git`. This command tells your local repo that there is a space for it to go online at that url and to call it "origin". Next, we are going to create the branch to work on with `git branch -M master`. And finally we will put our README on the remote repo by typing `git push -u origin master` which **pushes** our commited changes on branch **master** to the remote **origin**.
+
+Refresh your browser and you should see your README being displayed! Now anyone with an internet connection could download your repo, make changes to it, and then ask you to bring the changes into the main repo. GitHub also offers more than just repository hosting. They offer a whole suite of project organization tools. They can be found in the tabs at the top, such as "Issues", "Pull Requests", and "projects".
+
+Issues is a list of changes that need to be made to the project, pull requests are possible fixes for those issues submitted by people who want to contribute to the project, and projects are collections of issues. If you click the "Settings" tab, you will be taken to your repo settings. Scroll down and click on "Pages". 
+
+### Pages
+
+GitHub Pages is a way to host a webpage for your projects, yourself, or your organization right from a repo. It starts out disabled, and can be enabled by selecting a source branch from the repo. Do this by clicking on the dropdown that says "None" and selecting "master". Then hit save to make your changes take effect. Your site will be available at `https://YOUR_USERNAME.github.io/github_testing/`. The only problem is that GitHub will not know which file to show people who visit that link.
+
+To fix this problem, make a file in your local repo called `index.html` and insert some HTML into it. You can also add CSS and JavaScript files if you want and include them like usual. Use `git add` to add all of these files to the repo, and then use `git commit` to commit them. Once this is done, push them to the remote repo by using `git push`. If you try to visit your GitHub pages link now, it should work.
+
+You can also use markdown to write your site if you prefer, and give it nice, responsive, pre-made styles using Jeckyll. This can be configured from the pages settings page. 
