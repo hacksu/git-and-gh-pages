@@ -22,27 +22,18 @@ Git should already be installed for you. Open a terminal and type `git --version
 
 You may not have git installed. Open up a terminal and type `git --version`. If this does not work, install git from [git scm](https://git-scm.com/downloads). When prompted, we suggest that you select "use Git and optional Unix tools from the Windows Command Prompt" during the installation. 
 
-##REMOVE: 3. Configure your user information.
-
-Make sure to run these two commands once you have installed git:
-
-`git config --global user.name "Your name"`
-
-`git config --global user.email "your@email.com"`
-
-
 ###GitHub Desktop
 
 The GitHub desktop client allows you to interact with Git through a Graphical User Interface (GUI). It makes it easier to see your changes, make commits, pull, push, and many other actions you can execute through the command line. The GUI executes the command line GIT commands when you push changes, or whatever else you are doing with the repository. As the wise Dr.Maletic said, "You can get yourself in trouble with GIT in about 3 minutes", using the desktop client will cut out possible mistakes in typing commands out would be.
 
 First we need to sign into the GitHub account that was created previously to be able to commit our changes to a repository. To do so, follow the steps below
-	1. Open the GitHub Desktop client
-	2. In the top menu bar, click on File, then Options
-	3. In the left hand side of the options menu, click on Accounts
-	4. Click the "Log In" buttion under the GitHub.com option.
-	5. Click "Continue with browser", this will open GithHub. Sigin in and grant GitHub Desktop Client the permissions to your GitHub account.
-	6. You should now be signed in, to check, go back to the desktop app, click File and then Options. In the accounts section, you should see your profile
-	7. You are now ready to continue and get into the lesson, lets learn about Git!
+1. Open the GitHub Desktop client
+2. In the top menu bar, click on File, then Options
+3. In the left hand side of the options menu, click on Accounts
+4. Click the "Log In" buttion under the GitHub.com option.
+5. Click "Continue with browser", this will open GithHub. Sigin in and grant GitHub Desktop Client the permissions to your GitHub account.
+6. You should now be signed in, to check, go back to the desktop app, click File and then Options. In the accounts section, you should see your profile
+7. You are now ready to continue and get into the lesson, lets learn about Git!
 
 ## Lesson
 
@@ -74,7 +65,7 @@ Main is a branch, in Git you have the idea of branches. Think of them like a tre
 
 Refresh your browser and you should see your README being displayed! Now anyone with an internet connection could download your repo, make changes to it, and then ask you to bring the changes into the main repo. GitHub also offers more than just repository hosting. They offer a whole suite of project organization tools. They can be found in the tabs at the top, such as "Issues", "Pull Requests", and "projects".
 
-Issues is a list of changes that need to be made to the project, pull requests are possible fixes for those issues submitted by people who want to contribute to the project, and projects are collections of issues. If you click the "Settings" tab, you will be taken to your repo settings. Scroll down and click on "Pages". 
+Issues is a list of changes that need to be made to the project, pull requests are possible fixes for those issues submitted by people who want to contribute to the project, and projects are collections of issues. If you click the "Settings" tab, you will be taken to your repo settings. On the left hand side, click the option called "Pages". 
 
 
 ### Pages
