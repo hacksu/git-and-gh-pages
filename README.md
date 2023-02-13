@@ -39,10 +39,9 @@ First we need to sign into the GitHub account that was created previously to be 
 	1. Open the GitHub Desktop client
 	2. In the top menu bar, click on File, then Options
 	3. In the left hand side of the options menu, click on Accounts
-	4. Click the "Log In" buttion under the GitHub.com option. (It is important that it is the GitHub.com option, as the other is for enterprise accounts, 		which are set up diffrently).
+	4. Click the "Log In" buttion under the GitHub.com option. (It is important that it is the GitHub.com option, as the other is for enterprise accounts, 	which are set up diffrently).
 	5. Click "Continue with browser", this will open your default web browser and direct you to the GitHub signin page. Sigin in and grant GitHub Desktop
-		Client the permissions to your GitHub account.
-		
+	Client the permissions to your GitHub account.
 	6. You should now be signed in, to check, go back to the desktop app, click File and then Options. In the accounts section, you should see your profile 	under GitHub.com
 	7. You are now ready to continue and get into the lesson, lets learn about Git!
 
