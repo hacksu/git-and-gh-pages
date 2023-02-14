@@ -8,6 +8,10 @@ A source-control manager is most useful when used in teams, and teams need some 
 
 You can use git without ever using GitHub, just like you can use HTML without ever touching a server or watch a video without going to YouTube. GitHub is simply a place to put your git repos.
 
+An example of a large code base is with an application and code editor called (Visual Studio Code) [https://github.com/microsoft/vscode]. This is an example of how large a repository can get, as well as showing that thousands of people can contribute to projects to make them better in a communitive effort.
+
+We will be using Visual Studio code in a bit, don't worry, you do not have to install anything to do this. GitHub has some integration built in that makes for a easy way to make some touch ups.
+
 ## Setup
 
 1. Make a free GitHub account
@@ -24,7 +28,7 @@ You may not have git installed. Open up a terminal and type `git --version`. If 
 
 ###GitHub Desktop
 
-The GitHub desktop client allows you to interact with Git through a Graphical User Interface (GUI). It makes it easier to see your changes, make commits, pull, push, and many other actions you can execute through the command line. The GUI executes the command line GIT commands when you push changes, or whatever else you are doing with the repository. As the wise Dr.Maletic said, "You can get yourself in trouble with GIT in about 3 minutes", using the desktop client will cut out possible mistakes in typing commands out would be.
+The GitHub desktop client allows you to interact with Git through a Graphical User Interface (GUI). It makes it easier to see your changes, make commits, pull, push, and many other actions you can execute through the command line. The GUI executes the command line GIT commands when you push changes, or whatever else you are doing with the repository. As the wise Dr.Maletic said, "You can get yourself in trouble with GIT in about 30 seconds", using the desktop client will cut out possible mistakes in typing commands out would be.
 
 First we need to sign into the GitHub account that was created previously to be able to commit our changes to a repository. To do so, follow the steps below
 1. Open the GitHub Desktop client
@@ -65,13 +69,53 @@ Main is a branch, in Git you have the idea of branches. Think of them like a tre
 
 Refresh your browser and you should see your README being displayed! Now anyone with an internet connection could download your repo, make changes to it, and then ask you to bring the changes into the main repo. GitHub also offers more than just repository hosting. They offer a whole suite of project organization tools. They can be found in the tabs at the top, such as "Issues", "Pull Requests", and "projects".
 
+
+###Badges With Sheidls.io
+We can add badges to our repository in the README file, this can give some information to the public about key parts of the repository. For example, what branches have passed security checks. Green could mean that it is secure and passed the checks and red could mean it failed.
+
+To add a badge to the README.md in our repository, first go to (Shields.io)[https://shields.io/], then fill out the lable, message, and color boxes. Click Make Badge, you will be lead to a site with your badge.
+
+To put this into GitHub, copy the link in your address bar, this points to the actual badge and put it into the README file.
+
+To do this, we will use Visual Studio Code, which has an online version baked into GitHub. Navigate to your repository in GitHub, then press the full stop/ period(.). This will open an online version of VS Code. Then navigate and click on the icon with two files on the left menu bar, this opens the file explorer. Next click README in the list of files.
+
+Then add the follow Makrdown to the top of your README and replace LINK TO BADGE with the link to the badge we just created.
+
+![alt text for screen readers](LINK TO BADGE "Text to show on mouseover").
+
+After doing so, you will notice a number appear near an icon with a branch. This is the source control section. To commit and save changes, click the source control icon, type in your description and message, then click Commit & Push.
+
+Click back to go back to the repository page, then refresh the page.
+
+You should now see your shiny new badge!
+
+
 Issues is a list of changes that need to be made to the project, pull requests are possible fixes for those issues submitted by people who want to contribute to the project, and projects are collections of issues. If you click the "Settings" tab, you will be taken to your repo settings. On the left hand side, click the option called "Pages". 
+
 
 
 ### Pages
 
-GitHub Pages is a way to host a webpage for your projects, yourself, or your organization right from a repo. It starts out disabled, and can be enabled by selecting a source branch from the repo. Do this by clicking on the dropdown that says "None" and selecting "master". Then hit save to make your changes take effect. Your site will be available at `https://YOUR_USERNAME.github.io/github_testing/`. The only problem is that GitHub will not know which file to show people who visit that link.
+Right now, the repository does not have a website to show vistors.
 
-To fix this problem, make a file in your local repo called `index.html` and insert some HTML into it. You can also add CSS and JavaScript files if you want and include them like usual. Use `git add` to add all of these files to the repo, and then use `git commit` to commit them. Once this is done, push them to the remote repo by using `git push`. If you try to visit your GitHub pages link now, it should work.
+
+To fix this problem, make a file in your local repo called `index.html` and insert some HTML into it. 
+
+To do this, we will use Visual Studio Code, which has an online version baked into GitHub. Navigate to your repository in GitHub, then press the full stop/ period(.). This will open an online version of VS Code.
+
+You can also add CSS and JavaScript files if you want and include them like usual. Use the desktop client to commit the files to the repository, then push them. If you try to visit your GitHub pages link now, it should work.
 
 You can also use markdown to write your site if you prefer, and give it nice, responsive, pre-made styles using Jeckyll. This can be configured from the pages settings page. 
+
+Commit and Push your changes, then visit your new site. The format for GitHub Pages links is usally https://{username}.github.io/{file}
+
+Index.html is usally hidden in the address bar as GitHub is smart enought to know where to go for index.
+
+
+###Pull Request Example
+
+We have a github repository set up with a GitHub Page, the issue is, we have some large spelling mistakes in the site. To fix these, we will do pull requests withe the changes each person makes to give everyone an idea and a feel for pull requests.
+
+Please visit the [GitHub Repository] () for the files. Next after you are at the repositories GitHub repository, click Code, then click, Open in Desktop Client. This will pull the repository to your local machine. Open the repsitory like normal, then make a change.
+
+After the change is saved. 
