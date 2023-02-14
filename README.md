@@ -49,7 +49,7 @@ We have created a repository, to save it to GitHub, as GitHub has its own server
 
 If you visit GitHubs website and click your profile picture, then your repositories, you should see the repository we just made in the desktop app, you can click to view the contents, but there will be nothing in there. So lets add some content to this repository to make it more useful.
 
-To create a file, go back to the desktop app and ensure that the repository you created is the current repository selected (This is found in the left corner under current repository). Next, click show in explorer this is the local version of the repository on you machine and where all of the files from pulled repositories will live. 
+To create a file, go back to the desktop app and ensure that the repository you created is the current repository selected (This is found in the left corner under current repository). Next, click show in explorer this is the local version of the repository on you machine and where all of the files from pulled repositories will live.  Then open notepad on windows or text edit on mac. Be sure to go to Format, then plan text mode.
 
 A useful file that many GitHub repositories have is called a README file, this is what is displayed when someone views a repository. This file usally contains information on what the repository is, the tech stack/technologies used, credits to others that contributed, compiling instructions, running instructions, and many other details. This file will contain information about our repository written in [markdown](https://www.markdownguide.org/cheat-sheet/), a simple markup language like HTML. In fact, you are reading this repo's README right now. GitHub will show this file to anyone who visits your repo's page.
 
